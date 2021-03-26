@@ -1,0 +1,11 @@
+class shape
+!!!140542.cpp!!!	shape(in X : double, in Y : double)
+	x=X;
+	y=Y;
+!!!140670.cpp!!!	set_dimention(in X : double, in Y : double) : void
+	x = X;
+	y = Y;
+!!!141950.cpp!!!	operator ==(inout shape1 : shape) : bool
+		return this->area()==shape1.area();
+!!!142078.cpp!!!	operator !=(inout shape1 : shape) : bool
+		return this->area()!=shape1.area();

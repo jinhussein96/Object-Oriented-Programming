@@ -1,0 +1,881 @@
+format 221
+"hw5" // hw5::hw5
+  revision 1
+  modified_by 126 "ASUS"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  cpp_h_dir "C:\\Users\\ASUS\\Desktop\\hw5/"
+  cpp_src_dir "C:\\Users\\ASUS\\Desktop\\hw5/"
+  classview 128382 "hw5"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 128254 "shape"
+      abstract visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 129918 "x"
+	protected explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 130046 "y"
+	protected explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 130174 "areaa"
+	protected explicit_type "double"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 140414 "shape"
+	cpp_inline public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract} {};
+"
+	
+	
+	
+	
+      end
+
+      operation 140542 "shape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param in name "X" explicit_type "double"
+	  param in name "Y" explicit_type "double"
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 140670 "set_dimention"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "X" explicit_type "double"
+	  param in name "Y" explicit_type "double"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 140798 "get_x"
+	const cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}const ${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {return x;};
+"
+	
+	
+	
+	
+      end
+
+      operation 140926 "get_y"
+	const cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}const ${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {return y;};
+"
+	
+	
+	
+	
+      end
+
+      operation 141054 "area"
+	abstract const cpp_virtual public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}const ${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 141182 "perimeter"
+	abstract const cpp_virtual public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}const ${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 141310 "operator ++"
+	abstract cpp_virtual public return_type class_ref 128254 // shape
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 141438 "operator ++"
+	abstract cpp_virtual public return_type class_ref 128254 // shape
+	nparams 1
+	  param in name "temp" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 141566 "operator --"
+	abstract cpp_virtual public return_type class_ref 128254 // shape
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 141694 "operator --"
+	abstract cpp_virtual public return_type class_ref 128254 // shape
+	nparams 1
+	  param in name "temp" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 141822 "draw"
+	abstract const cpp_virtual public explicit_return_type "void"
+	nparams 1
+	  param inout name "file" explicit_type "ofstream"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	
+	
+	
+	
+      end
+
+      operation 141950 "operator =="
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type "bool"
+	nparams 1
+	  param inout name "shape1" type class_ref 128254 // shape
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 142078 "operator !="
+	preserve_cpp_body_indent cpp_virtual public explicit_return_type "bool"
+	nparams 1
+	  param inout name "shape1" type class_ref 128254 // shape
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+    end
+
+    class 128382 "composedShape"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128254 // <generalisation>
+	relation 128254 ---|>
+	  a public
+	    cpp default "${type}"
+	    classrelation_ref 128254 // <generalisation>
+	  b parent class_ref 128254 // shape
+      end
+
+      classrelation 128382 // reca (<directional composition>)
+	relation 128382 *-->
+	  a role_name "reca" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 128382 // reca (<directional composition>)
+	  b parent class_ref 128510 // rectangle
+      end
+
+      classrelation 128510 // recb (<directional composition>)
+	relation 128510 *-->
+	  a role_name "recb" private
+	    comment "shape = 1"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 128510 // recb (<directional composition>)
+	  b parent class_ref 128510 // rectangle
+      end
+
+      classrelation 128638 // tri_a (<directional composition>)
+	relation 128638 *-->
+	  a role_name "tri_a" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 128638 // tri_a (<directional composition>)
+	  b parent class_ref 128638 // triangle
+      end
+
+      classrelation 128766 // tri_b (<directional composition>)
+	relation 128766 *-->
+	  a role_name "tri_b" private
+	    comment "shape = "
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 128766 // tri_b (<directional composition>)
+	  b parent class_ref 128638 // triangle
+      end
+
+      classrelation 128894 // cir_a (<directional composition>)
+	relation 128894 *-->
+	  a role_name "cir_a" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 128894 // cir_a (<directional composition>)
+	  b parent class_ref 128126 // circle
+      end
+
+      classrelation 129022 // cir_b (<directional composition>)
+	relation 129022 *-->
+	  a role_name "cir_b" private
+	    comment "shape = 3"
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 129022 // cir_b (<directional composition>)
+	  b parent class_ref 128126 // circle
+      end
+
+      classrelation 129150 // vec (<unidirectional association>)
+	relation 129150 --->
+	  stereotype "vector"
+	  a role_name "vec" private
+	    cpp default "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${stereotype}<${type}*> ${name}${value};
+"
+	    classrelation_ref 129150 // vec (<unidirectional association>)
+	  b parent class_ref 128254 // shape
+      end
+
+      attribute 128254 "main_shape"
+	private explicit_type "int"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 128382 "inner_shape"
+	private explicit_type "int"
+	cpp_decl "    ${comment}${static}${thread_local}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 129662 "composedShape"
+	cpp_inline public explicit_return_type ""
+	nparams 0
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw}${abstract} :shape(){};
+"
+	
+	
+	
+	
+      end
+
+      operation 129790 "composedShape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "container_rec" type class_ref 128510 // rectangle
+	  param inout name "inner_rec" type class_ref 128510 // rectangle
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 129918 "composedShape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "container_rec" type class_ref 128510 // rectangle
+	  param inout name "inner_cir" type class_ref 128126 // circle
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130046 "composedShape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "container_rec" type class_ref 128510 // rectangle
+	  param inout name "inner_tri" type class_ref 128638 // triangle
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130174 "composedShape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "container_cir" type class_ref 128126 // circle
+	  param inout name "inner_rec" type class_ref 128510 // rectangle
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130302 "composedShape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "container_cir" type class_ref 128126 // circle
+	  param inout name "inner_tri" type class_ref 128638 // triangle
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130430 "composedShape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "container_cir" type class_ref 128126 // circle
+	  param inout name "inner_cir" type class_ref 128126 // circle
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130558 "composedShape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "container_tri" type class_ref 128638 // triangle
+	  param inout name "inner_tri" type class_ref 128638 // triangle
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130686 "composedShape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "container_tri" type class_ref 128638 // triangle
+	  param inout name "inner_rec" type class_ref 128510 // rectangle
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130814 "composedShape"
+	preserve_cpp_body_indent public explicit_return_type ""
+	nparams 2
+	  param inout name "container_tri" type class_ref 128638 // triangle
+	  param inout name "inner_cir" type class_ref 128126 // circle
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${volatile}${throw} {
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 130942 "operator []"
+	preserve_cpp_body_indent public return_type class_ref 128254 // shape
+	nparams 1
+	  param in name "index" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}const ${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 131070 "get_vector_size"
+	const cpp_inline public explicit_return_type "int"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}const ${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {return vec.size();};
+"
+	
+	
+	
+	
+      end
+
+      operation 131198 "get_vector"
+	const cpp_inline public explicit_return_type "std::vector<shape*>"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}const ${type} & ${name}${(}${)}${const}${volatile}${throw}${abstract} {return vec;};
+"
+	
+	
+	
+	
+      end
+
+      operation 131326 "optimalFit"
+	preserve_cpp_body_indent public explicit_return_type "void"
+	nparams 2
+	  param in name "main_shape" explicit_type "int"
+	  param in name "small_shape" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 131454 "operator ++"
+	cpp_virtual cpp_inline public return_type class_ref 128382 // composedShape
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${)}${const}${volatile}${throw}${abstract} {};
+"
+	
+	
+	
+	
+      end
+
+      operation 131582 "operator --"
+	cpp_virtual cpp_inline public return_type class_ref 128382 // composedShape
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${)}${const}${volatile}${throw}${abstract} {};
+"
+	
+	
+	
+	
+      end
+
+      operation 131710 "operator ++"
+	cpp_virtual cpp_inline public return_type class_ref 128382 // composedShape
+	nparams 1
+	  param in name "i" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {};
+"
+	
+	
+	
+	
+      end
+
+      operation 131838 "operator --"
+	cpp_virtual cpp_inline public return_type class_ref 128382 // composedShape
+	nparams 1
+	  param in name "i" explicit_type "int"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} & ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {};
+"
+	
+	
+	
+	
+      end
+
+      operation 131966 "area"
+	const cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}const ${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {};
+"
+	
+	
+	
+	
+      end
+
+      operation 132094 "perimeter"
+	const cpp_inline public explicit_return_type "double"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}const ${type} ${name}${(}${)}${const}${volatile}${throw}${abstract} {};
+"
+	
+	
+	
+	
+      end
+
+      operation 132222 "draw"
+	const cpp_inline public explicit_return_type "void"
+	nparams 1
+	  param inout name "file" explicit_type "ofstream"
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract} {};
+"
+	
+	
+	
+	
+      end
+    end
+  end
+
+  deploymentview 128254 "hw5"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 128254 "composedShape"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128382 // composedShape
+      end
+    end
+
+    artifact 128894 "shape"
+      stereotype "source"
+      cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
+#define ${NAMESPACE}_${NAME}_H
+
+${comment}
+${includes}
+${declarations}
+${namespace_start}
+${definition}
+${namespace_end}
+#endif
+"
+      cpp_src "${comment}
+${includes}
+${namespace_start}
+${members}
+${namespace_end}"
+      associated_elems
+	class_ref 128254 // shape
+      end
+    end
+
+    artifact 129150 "main"
+      stereotype "source"
+      cpp_src "int main(){
+	ofstream myfile;
+	myfile.open(\"output.svg\");
+	if(!myfile){
+    cout <<\"sorry couldnt open file \\n\";
+   }
+  
+  	/*char shape;
+    char small_shape;
+    rectangle reca,recb;
+    circle cir_a,cir_b;
+    triangle tri_a,tri_b;
+
+
+    cout << \"Please enter the main container shape (R, C, T) \"<< endl ;
+    cin >> shape ;
+    cout <<\"please enter the small shape (R,C,T)\" << endl;
+    cin >> small_shape;
+
+     if(shape == 'R' ){
+       double width,height;
+        char c= '\"';
+        int small_width,small_height;
+        cout << \"please enter the width and height of the main rectangle\" <<endl;
+        cout << \"enter the width \" ;
+        cin>>width;
+        cout<<\"please enter the height \";
+        cin >> height;
+        myfile <<\" <svg width= \" << c<< width<<c << \" height= \" << c << height << c << \">\" <<endl ;
+       	reca.set_dimentions(width,height,0,0);
+       	polyvec *p = new polyvec(reca);
+       	myfile<< p;
+       	if(small_shape == 'R'){
+
+            cout << \"please enter the width and height of the inner rectangle\" <<endl;
+            cout << \"enter the width \" ;
+            cin >> small_width ;
+            cout << \"enter the height \";
+            cin >> small_height;
+            recb.set_dimentions(small_width,small_height,0,0);
+            polyvec *p1 = new polyvec(recb);
+            composedShape *com = new composedShape(reca,recb);
+            printAll(myfile,com->get_vector());
+        }
+        else if(small_shape == 'T'){
+            double length;
+            cout <<\"please enter the length of the triangle side \";
+            cin >> length;
+            tri_b.set_length(length);
+
+            composedShape *com = new composedShape(reca,tri_b);
+            printAll(myfile,com->get_vector());
+        }
+         else if(small_shape == 'C'){
+            double radius;
+            cout <<\"please enter the radius of the small shape \\n\";
+            cin >> radius ;
+
+            cir_b.set_radius(radius,radius,radius);
+         	composedShape *com = new composedShape(reca,cir_b);
+            printAll(myfile,com->get_vector());
+             
+           
+                
+        }
+      
+    }
+    else if(shape == 'C'){
+        double radius;
+        cout <<\"please enter the radius of the main shape \\n\";
+        cin >> radius ;
+        myfile <<\"<svg> \\n\" ;
+        circle cir_a(radius,radius,radius);
+        polyvec *p = new polyvec(cir_a);
+        myfile<<p;
+        if(small_shape == 'R'){
+            double small_width,small_height;
+            cout << \"please enter the width and height of the inner rectangle\" <<endl;
+            cout << \"enter the width \" ;
+            cin >> small_width ;
+            cout << \"enter the height \";
+            cin >> small_height;
+            recb.set_dimentions(small_width,small_height,radius,radius);
+            composedShape *com = new composedShape(cir_a,recb);
+            printAll(myfile,com->get_vector());
+                
+        }
+        else if(small_shape == 'C'){
+            double radius;
+            cout <<\"please enter the radius of the small shape \\n\";
+            cin >> radius ;
+
+            cir_b.set_radius(radius,cir_a.get_radius(),cir_a.get_radius());
+            composedShape *com = new composedShape(cir_a,cir_b);
+            printAll(myfile,com->get_vector());
+                
+                
+        }
+ 	    
+             
+
+
+}
+else if(shape == 'T'){
+        double length;
+        double small_height,small_width;
+        cout <<\"please enter the length of the main triangle's side \\n\";
+        cin >> length;
+        myfile <<\"<svg> \\n\";
+        tri_a.set_length(length);
+        tri_a.set_points(0,(sqrt(3)/2)*tri_a.get_length(),tri_a.get_length(),(sqrt(3)/2)*tri_a.get_length(),tri_a.get_length()/2,0);
+       	polyvec *p = new polyvec(tri_a);
+       	myfile<< p ;
+       	if(small_shape == 'R'){
+            cout << \"please enter the width and height of the inner rectangle\" <<endl;
+            cout << \"enter the width \" ;
+            cin >> small_width ;
+            cout << \"enter the height \";
+            cin >> small_height;
+            recb.set_dimentions(small_width,small_height,tri_a.get_length()/2,tri_a.get_length()/2);
+            composedShape *com = new composedShape(tri_a,recb);
+            printAll(myfile,com->get_vector());
+            
+         }
+              
+
+}
+
+
+
+
+   
+    myfile<<\"</svg>\";
+
+*/	
+   rectangle *r = new rectangle(0,0,0,0);
+   std::vector<shape*> v;
+   v.push_back(r);
+   std::vector<shape*> v1;
+   converAll(v,v1);
+		return 0;
+}
+"
+      associated_elems
+      end
+    end
+  end
+end

@@ -1,0 +1,23 @@
+class circle
+!!!129022.cpp!!!	draw(inout file : ofstream) : void
+
+   file <<"<circle cx = \""<<x<<"\" cy=\""<<y<<"\" r=\""<<radius<<"\" fill= \"red\" stroke=\"black\" stroke-width=\"3\" />" ;
+   file<<endl;
+
+!!!129150.cpp!!!	operator ++() : circle
+			x++;
+			y++;
+			return *this;
+!!!129278.cpp!!!	operator --() : circle
+		x--;y--;
+		return *this;
+!!!129406.cpp!!!	operator ++(in temp : int) : circle
+		circle& cir = *this;
+		x++;
+		y++;
+		return cir;
+!!!129534.cpp!!!	operator --(in temp : int) : circle
+		circle& cir = *this;
+		x--;
+		y--;
+		return cir;

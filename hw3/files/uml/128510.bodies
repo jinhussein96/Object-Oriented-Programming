@@ -1,0 +1,29 @@
+class rectangle
+!!!139134.cpp!!!	set_dimentions(in widthh : double, in heightt : double, in X : double, in Y : double) : void
+	x = X;
+	y = Y;
+	width = widthh;
+	height = heightt;
+!!!139774.cpp!!!	draw(inout myfile : ofstream) : void
+    char c = '"';
+
+   myfile << "<rect x=\""<<x<<"\" y=\""<<y<<"\" width= "<< c <<width<< c << " height= " << c<<height<< c<<endl ;
+            
+    myfile<< "style =\"fill:blue;stroke-width:0.5;stroke:black\" />"<<endl;  
+!!!139902.cpp!!!	operator ++() : rectangle
+	x++;
+	y++;
+		return *this;
+!!!140030.cpp!!!	operator --() : rectangle
+		x--;y--;
+		return *this;
+!!!140158.cpp!!!	operator ++(in temp : int) : rectangle
+		rectangle& rec = *this;
+		x++;
+		y++;
+		return rec;
+!!!140286.cpp!!!	operator --(in temp : int) : rectangle
+		rectangle& rec = *this;
+		x--;
+		y--;
+		return rec;

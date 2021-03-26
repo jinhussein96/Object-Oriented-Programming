@@ -1,0 +1,30 @@
+class triangle
+!!!143358.cpp!!!	set_points(in x1 : double, in y1 : double, in x2 : double, in y2 : double, in x3 : double, in y3 : double) : void
+	x = x1;
+	y = y1;
+	X2 = x2;
+	Y2 =y2;
+	X3 = x3;
+	Y3 = y3;
+!!!143486.cpp!!!	draw(inout myfile : ofstream) : void
+	 myfile<<"<path d=\"M"<<x<<" "<<y<<" L"<<X2<<" "<<Y2<<" L"<<X3<<" "<<Y3<<" Z \" stroke=\"green\" stroke-width=\"1\" fill=\"pink\" /> \n" ;
+    myfile<<endl;
+!!!143870.cpp!!!	operator ++() : triangle
+			x++;
+			y++;
+			X2++;
+			Y2++;
+			X3++;
+			Y3++;
+			return *this;
+!!!143998.cpp!!!	operator ++(in temp : int) : triangle
+			triangle& tri = *this;
+			x++;y++;X2++;Y2++;X3++;Y3++;
+			return tri;
+!!!144126.cpp!!!	operator --() : triangle
+			x--;y--;X2--;Y2--;X3--;Y3--;
+			return *this;
+!!!144254.cpp!!!	operator --(in temp : int) : triangle
+			triangle& tri = *this;
+			x--;y--;X2--;Y2--;X3--;Y3--;
+			return *this;
